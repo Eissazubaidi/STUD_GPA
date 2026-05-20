@@ -11,12 +11,59 @@
   --color-brand-card-dark: #1e293b;
   --color-brand-card-border-dark: #334155;
   
-  --color-brand-bg-light: #edf1f6;  /* Extremely comforting, eye-safe slate alloy background */
-  --color-brand-card-light: #f8fafc; /* Sleek slate-50 off-white card background */
-  --color-brand-card-border-light: #cbd5e1; /* Soft border outlines */
+  --color-brand-bg-light: var(--brand-bg-light);
+  --color-brand-card-light: var(--brand-card-light);
+  --color-brand-card-border-light: var(--brand-card-border-light);
+
+  --color-slate-50: var(--slate-50);
+  --color-slate-100: var(--slate-100);
+  --color-slate-200: var(--slate-200);
+  --color-slate-300: var(--slate-300);
+  --color-slate-400: var(--slate-400);
+  --color-slate-500: var(--slate-500);
+  --color-slate-600: var(--slate-600);
+  --color-slate-700: var(--slate-700);
+  --color-slate-800: var(--slate-800);
+  --color-slate-900: var(--slate-900);
 }
 
 @layer base {
+  :root {
+    --brand-bg-light: #f4f3ef;        /* Ultra-premium, luxurious, eye-friendly sand-linen background */
+    --brand-card-light: #fafaf8;      /* Soft, high-comfort off-white card canvas */
+    --brand-card-border-light: #e2ded9; /* Smooth warmth border outlines to match */
+
+    /* Complete organic slate overrides to tone down light-mode glare entirely */
+    --slate-50: #fafaf8;
+    --slate-100: #f1ede8;
+    --slate-200: #e2ded9;
+    --slate-300: #cfcabe;
+    --slate-400: #a39c8f;
+    --slate-500: #7b7569;
+    --slate-600: #625c52;
+    --slate-700: #4c473f;
+    --slate-800: #2d2b27;
+    --slate-900: #1c1a18;
+  }
+
+  .dark {
+    --brand-bg-light: #edf1f6;
+    --brand-card-light: #f8fafc;
+    --brand-card-border-light: #cbd5e1;
+
+    /* Pristine, gorgeous dark cockpit colors */
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-700: #334155;
+    --slate-800: #1e293b;
+    --slate-900: #0f172a;
+  }
+
   html, body {
     font-family: var(--font-sans);
     direction: rtl;
@@ -46,9 +93,10 @@
   background-color: rgba(30, 41, 59, 0.7);
 }
 
-.light .glass-panel {
-  border: 1px solid rgba(203, 213, 225, 0.5); /* Soft slate border instead of white glare */
-  background-color: rgba(248, 250, 252, 0.85); /* Highly soothing tinted background */
+.light .glass-panel,
+html:not(.dark) .glass-panel {
+  border: 1px solid rgba(226, 222, 213, 0.6); /* Cozy warm linen glass panel border */
+  background-color: rgba(250, 249, 246, 0.85); /* Warm ivory-satin glass reflection effect */
 }
 
 /* Elegant ambient glows */

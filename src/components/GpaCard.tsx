@@ -104,9 +104,9 @@ export default function GpaCard({ stats, onStatsChange }: GpaCardProps) {
                 placeholder="مثال: 4.25"
                 value={stats.currentGpa === 0 ? '' : stats.currentGpa}
                 onChange={handleGpaChange}
-                className="w-full px-4 py-3.5 rounded-2xl bg-slate-50 hover:bg-slate-100 dark:bg-slate-950/40 dark:hover:bg-slate-950/60 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 font-mono text-lg transition-all"
+                className="w-full pl-16 pr-5 py-3.5 rounded-2xl bg-slate-50 hover:bg-slate-100 dark:bg-slate-950/40 dark:hover:bg-slate-950/60 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 font-sans font-semibold text-lg transition-all"
               />
-              <div className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-600 font-medium text-sm">
+              <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-700 dark:text-slate-300 font-bold text-sm select-none pointer-events-none">
                 / 5.0
               </div>
             </div>
@@ -155,9 +155,9 @@ export default function GpaCard({ stats, onStatsChange }: GpaCardProps) {
                 placeholder="مثال: 60 ساعة"
                 value={stats.currentHours === 0 ? '' : stats.currentHours}
                 onChange={handleHoursChange}
-                className="w-full px-4 py-3.5 rounded-2xl bg-slate-50 hover:bg-slate-100 dark:bg-slate-950/40 dark:hover:bg-slate-950/60 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 font-mono text-lg transition-all"
+                className="w-full pl-16 pr-5 py-3.5 rounded-2xl bg-slate-50 hover:bg-slate-100 dark:bg-slate-950/40 dark:hover:bg-slate-950/60 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 font-sans font-semibold text-lg transition-all"
               />
-              <div className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-600 font-medium text-sm">
+              <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-700 dark:text-slate-300 font-bold text-sm select-none pointer-events-none">
                 ساعة
               </div>
             </div>

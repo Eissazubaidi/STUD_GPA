@@ -176,8 +176,8 @@ export default function ResultsDisplay({
           >
             {semGpaStr}
           </motion.span>
-          <div className="mt-2 text-[11px] font-medium text-slate-400 truncate flex items-center gap-1">
-            <Compass className="w-3 h-3 text-slate-400" />
+          <div className="mt-2 text-[11px] font-semibold text-slate-600 dark:text-slate-400 truncate flex items-center gap-1">
+            <Compass className="w-3.5 h-3.5 text-indigo-500/80" />
             تقدير فصلي: {semesterRating.text}
           </div>
         </motion.div>
@@ -194,9 +194,9 @@ export default function ResultsDisplay({
             ساعات الفصل الحالي
           </span>
           <span className="text-3xl font-bold font-mono text-slate-800 dark:text-slate-200 mt-2 arabic-numbers">
-            {semesterHours} <span className="text-sm font-sans text-slate-400">ساعة</span>
+            {semesterHours} <span className="text-sm font-sans font-semibold text-slate-600 dark:text-slate-400">ساعة</span>
           </span>
-          <div className="mt-2 text-[11px] font-medium text-slate-400">
+          <div className="mt-2 text-[11px] font-semibold text-slate-600 dark:text-slate-400">
             ساعات مضافة في الحساب
           </div>
         </motion.div>
@@ -213,9 +213,9 @@ export default function ResultsDisplay({
             المجموع الكلي للساعات
           </span>
           <span className="text-3xl font-bold font-mono text-slate-800 dark:text-slate-200 mt-2 arabic-numbers">
-            {totalHours} <span className="text-sm font-sans text-slate-400">ساعة</span>
+            {totalHours} <span className="text-sm font-sans font-semibold text-slate-600 dark:text-slate-400">ساعة</span>
           </span>
-          <div className="mt-2 text-[11px] font-medium text-slate-400">
+          <div className="mt-2 text-[11px] font-semibold text-slate-600 dark:text-slate-400">
             المنجزة + سياق الفصل الحالي
           </div>
         </motion.div>
