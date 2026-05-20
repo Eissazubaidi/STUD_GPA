@@ -1,0 +1,6 @@
+{
+  "name": "حاسبة المعدل التراكمي من 5",
+  "description": "حاسبة حديثة واحترافية لحساب المعدل الفصلي والتراكمي المتوقع بنظام 5 نقاط بشكل فوري وتفاعلي مع دعم حفظ المواد وحساب فوري.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
